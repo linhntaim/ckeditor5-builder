@@ -35,6 +35,9 @@ import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize'
 import ImageTextAlternative from '@ckeditor/ckeditor5-image/src/imagetextalternative'
 import LinkImage from '@ckeditor/ckeditor5-link/src/linkimage'
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter'
+import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline'
+import Font from '@ckeditor/ckeditor5-font/src/font'
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight'
 // TODO
 // TODO:
 
@@ -74,6 +77,9 @@ ClassicEditor.builtinPlugins = [
     ImageTextAlternative,
     LinkImage,
     SimpleUploadAdapter,
+    HorizontalLine,
+    Font,
+    Highlight,
     // TODO
     // TODO:
 
@@ -86,19 +92,27 @@ ClassicEditor.defaultConfig = {
         items: [
             'heading',
             '|',
+            'fontFamily',
+            'fontSize',
+            'fontColor',
+            'fontBackgroundColor',
+            '|',
             'bold',
             'italic',
-            'link',
             'bulletedList',
             'numberedList',
             '|',
             'indent',
             'outdent',
             '|',
-            'imageInsert',
+            'horizontalLine',
             'blockQuote',
+            'link',
+            'imageInsert',
             'insertTable',
             'mediaEmbed',
+            '|',
+            'highlight',
             'undo',
             'redo',
         ],
